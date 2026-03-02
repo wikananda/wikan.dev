@@ -24,7 +24,7 @@ export default function ShineButton({
             target={external ? "_blank" : undefined}
             rel={external ? "noopener noreferrer" : undefined}
             download={download}
-            className="group relative inline-flex items-center gap-3 overflow-hidden rounded-sm border border-primary px-8 py-3 text-primary hover:border-highlight hover:text-highlight transition-all"
+            className="group relative inline-flex items-center gap-3 overflow-hidden rounded-sm border border-primary px-5 py-2 text-primary hover:border-highlight hover:text-highlight transition-all"
             variants={{
                 initial: { scale: 1 },
                 hover: { scale: 1.05 },
@@ -54,7 +54,7 @@ export default function ShineButton({
             )}
 
             {/* Label */}
-            <span className="relative z-10 text-sm font-semibold tracking-wide">
+            <span className="relative z-10 text-body font-medium tracking-wide">
                 {label}
             </span>
 

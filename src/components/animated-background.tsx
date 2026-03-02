@@ -12,7 +12,7 @@ export default function AnimatedBackground() {
 
     useEffect(() => {
         const controls = animate(angle, [25, 32, 15, 25], {
-            duration: 10,
+            duration: 7,
             repeat: Infinity,
             ease: "easeInOut",
         });
