@@ -14,11 +14,18 @@
   --color-green-shade: #32746D;
   --color-green-darkshade: #104F55;
 
-  --text-display: 3rem;
-  --text-heading: 1.5rem;
-  --text-subheading: 1.25rem;
-  --text-body: 1rem;
-  --text-caption: 0.75rem;
+  /* Custom breakpoints for large & ultra-wide screens */
+  --breakpoint-3xl: 120rem;
+  /* 1920px — FHD */
+  --breakpoint-4k: 160rem;
+  /* 3840px — 4K UHD */
+
+  /* clamp(mobile-min, vw-scale, max) */
+  --text-display: clamp(1.75rem, 2.5vw, 6rem);
+  --text-heading: clamp(1.1rem, 1.3vw, 3rem);
+  --text-subheading: clamp(1rem, 1.1vw, 2.5rem);
+  --text-body: clamp(0.9rem, 0.9vw, 1.75rem);
+  --text-caption: clamp(0.75rem, 0.7vw, 1.25rem);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -29,17 +29,22 @@ export default function MainPage() {
     };
 
     return (
-        <section className="flex flex-col gap-5 max-w-full h-[80vh] justify-center">
-            <div className="flex flex-col">
-                <h1 className="text-display font-extralight">Hello, I'm <span className="font-semibold text-highlight">Wikananda</span></h1>
-                <p className="-mt-3 text-heading font-semibold">an AI Developer</p>
+        <section className="w-full flex flex-col gap-6 min-h-[85vh] justify-center items-center md:items-start px-6 md:px-0">
+            <div className="flex flex-col text-center md:text-left">
+                <h1 className="text-display font-semibold text-highlight leading-none">
+                    <span className="block md:inline text-body md:text-display font-light text-primary mb-1 md:mb-0">
+                        Hello, I'm{" "}
+                    </span>
+                    Wikananda
+                </h1>
+                <p className="mt-5 mb-1 md:mb-0 md:mt-0 text-heading font-semibold">an AI Developer</p>
             </div>
-            <div className="max-w-xl">
-                <p className="text-body font-light">I specialized in LLM pipelines, deep learning applications and data science. Experienced in  training/fine-tuning transformers models, predictive modeling, data analytics.</p>
+            <div className="w-full max-w-md 4k:max-w-2xl">
+                <p className="text-body font-light text-center md:text-left">I specialized in LLM pipelines, deep learning applications and data science. Experienced in training/fine-tuning transformers models, predictive modeling, data analytics.</p>
             </div>
 
             {/* Social Media & Resume */}
-            <div className="flex flex-row gap-15 items-center">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-15 items-center">
                 {/* Social Media */}
                 <div className="flex flex-row gap-10">
                     <ClickableIcon href={github.href} icon={github.icon} />
@@ -47,7 +52,8 @@ export default function MainPage() {
                     <ClickableIcon href={email.href} icon={email.icon} />
                 </div>
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="47" viewBox="0 0 2 47" fill="none">
+                {/* Divider — hidden on mobile */}
+                <svg className="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="2" height="47" viewBox="0 0 2 47" fill="none">
                     <path d="M1 1V46" stroke="#32746D" strokeWidth="2" strokeLinecap="round" />
                 </svg>
 
