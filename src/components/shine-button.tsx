@@ -60,10 +60,19 @@ export default function ShineButton({
 
             {/* Shine sweep */}
             <motion.div
-                className="absolute inset-0 z-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
-                initial={{ x: "-100%" }}
-                whileHover={{ x: "100%" }}
-                transition={{ duration: 0.5 }}
+                className="absolute inset-0 z-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent"
+                variants={{
+                    initial: { x: "-100%" },
+                    hover: {
+                        x: ["-100%", "100%", "-100%", "-100%", "-100%"],
+                        transition: {
+                            duration: 3,
+                            ease: "easeInOut",
+                            repeat: Infinity,
+                            repeatType: "loop",
+                        },
+                    },
+                }}
             />
         </motion.a>
     );
