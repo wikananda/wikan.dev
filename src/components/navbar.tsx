@@ -15,7 +15,7 @@ export default function Navbar({ onNavigate }: { onNavigate: (page: string) => v
                 {/* Menu */}
                 <div className="hidden md:flex gap-16">
                     <button onClick={() => onNavigate("projects")} className="text-subheading font-normal text-primary hover:text-highlight transition-all duration-200 cursor-pointer">Projects</button>
-                    <button onClick={() => onNavigate("main")} className="text-subheading font-normal text-primary hover:text-highlight transition-all duration-200 cursor-pointer">About</button>
+                    <button onClick={() => onNavigate("about")} className="text-subheading font-normal text-primary hover:text-highlight transition-all duration-200 cursor-pointer">About</button>
                 </div>
 
                 {/* Hamburger dropdown */}
@@ -66,7 +66,7 @@ export default function Navbar({ onNavigate }: { onNavigate: (page: string) => v
                             className="bg-dark/25 backdrop-blur-sm absolute flex flex-col gap-5 items-end top-full right-6 w-35 bg-background border rounded-sm border-primary p-4"
                         >
                             <button onClick={() => { onNavigate("projects"); setMenuOpen(false); }} className="text-body font-light">Projects</button>
-                            <button onClick={() => { onNavigate("main"); setMenuOpen(false); }} className="text-body font-light">About</button>
+                            <button onClick={() => { onNavigate("about"); setMenuOpen(false); }} className="text-body font-light">About</button>
                         </motion.div>
                     )}
                 </AnimatePresence>
