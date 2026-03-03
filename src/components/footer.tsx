@@ -37,10 +37,10 @@ export default function Footer() {
             className="bg-dark/25 backdrop-blur-sm border-t border-primary/30 w-full py-10 3xl:py-20 text-body font-light text-primary mt-20"
         >
             <div className="w-full max-w-xl sm:max-w-xl md:max-w-2xl lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl 3xl:max-w-7xl 4k:max-w-400 mx-auto px-6 flex flex-col gap-10 3xl:gap-20">
-                <div className="flex flex-col sm:flex-row gap-10 md:gap-10 justify-between items-center w-full">
+                <div className="flex flex-col md:flex-row gap-10 md:gap-10 justify-between items-center w-full">
                     <Link href="/" className="text-heading font-semibold text-highlight">Wikananda.</Link>
 
-                    <div className="flex flex-col sm:flex-row gap-5 md:gap-10 xl:gap-16 items-center">
+                    <div className="flex flex-col md:flex-row gap-5 md:gap-10 xl:gap-16 items-center">
                         <Link href="/" className="text-subheading font-normal text-primary hover:text-highlight hover:font-semibold transition-all duration-200">Projects</Link>
                         <Link href="/" className="text-subheading font-normal text-primary hover:text-highlight hover:font-semibold transition-all duration-200">About</Link>
                         <Link href="https://drive.google.com/file/d/1PDiXc6aaLOuUVC30Qh0plwimiEx2Dnnf/view?usp=sharing" target="_blank" className="text-subheading font-normal text-primary hover:text-highlight hover:font-semibold transition-all duration-200">Resume</Link>
