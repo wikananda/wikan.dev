@@ -4,29 +4,29 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, X } from "lucide-react";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({ onNavigate }: { onNavigate: (page: string) => void }) {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="px-6 py-5 relative">
-            <div className="flex items-center justify-between">
-                <Link href="/" className="text-heading font-semibold text-highlight">Wikananda.</Link>
+        <nav className="px-6 py-5 relative z-50">
+            <div className="flex items-center justify-between w-full max-w-xl sm:max-w-xl md:max-w-2xl lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl 3xl:max-w-7xl 4k:max-w-400 mx-auto">
+                <button onClick={() => onNavigate("main")} className="text-heading font-semibold text-highlight transition-transform cursor-pointer">Wikananda.</button>
 
                 {/* Menu */}
-                <div className="hidden sm:flex gap-16">
-                    <Link href="/" className="text-subheading font-light text-primary hover:text-highlight hover:font-semibold transition-all duration-200">Projects</Link>
-                    <Link href="/" className="text-subheading font-light text-primary hover:text-highlight hover:font-semibold transition-all duration-200">About</Link>
+                <div className="hidden md:flex gap-16">
+                    <button onClick={() => onNavigate("projects")} className="text-subheading font-normal text-primary hover:text-highlight transition-all duration-200 cursor-pointer">Projects</button>
+                    <button onClick={() => onNavigate("main")} className="text-subheading font-normal text-primary hover:text-highlight transition-all duration-200 cursor-pointer">About</button>
                 </div>
 
                 {/* Hamburger dropdown */}
                 <button
-                    className="sm:hidden"
+                    className="md:hidden"
                     onClick={() => setMenuOpen(!menuOpen)}
                 >
                     <motion.div
                         layout
                         transition={{ duration: 0.25, ease: "easeInOut" }}
-                        className="border border-primary rounded-sm px-2 py-1 overflow-hidden flex items-end"
+                        className="bg-dark/25 backdrop-blur-sm border border-primary rounded-sm px-2 py-1 overflow-hidden flex items-end"
                     >
                         <AnimatePresence mode="popLayout" initial={false}>
                             {menuOpen ? (
@@ -63,10 +63,10 @@ export default function Navbar() {
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -10 }}
-                            className="absolute flex flex-col gap-5 items-end top-full right-6 w-35 bg-background border rounded-sm border-primary p-4"
+                            className="bg-dark/25 backdrop-blur-sm absolute flex flex-col gap-5 items-end top-full right-6 w-35 bg-background border rounded-sm border-primary p-4"
                         >
-                            <Link href="/" className="text-body font-light">Projects</Link>
-                            <Link href="/" className="text-body font-light">About</Link>
+                            <button onClick={() => { onNavigate("projects"); setMenuOpen(false); }} className="text-body font-light">Projects</button>
+                            <button onClick={() => { onNavigate("main"); setMenuOpen(false); }} className="text-body font-light">About</button>
                         </motion.div>
                     )}
                 </AnimatePresence>

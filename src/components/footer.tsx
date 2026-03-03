@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Mail } from "lucide-react";
 import ClickableIcon from "./clickable-icon";
 
-export default function Footer() {
+export default function Footer({ onNavigate }: { onNavigate: (page: string) => void }) {
     const iconClass = "w-5 h-5 3xl:w-8 3xl:h-8";
 
     const github = {
@@ -38,12 +38,12 @@ export default function Footer() {
         >
             <div className="w-full max-w-xl sm:max-w-xl md:max-w-2xl lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl 3xl:max-w-7xl 4k:max-w-400 mx-auto px-6 flex flex-col gap-10 3xl:gap-20">
                 <div className="flex flex-col md:flex-row gap-10 md:gap-10 justify-between items-center w-full">
-                    <Link href="/" className="text-heading font-semibold text-highlight">Wikananda.</Link>
+                    <button onClick={() => onNavigate("main")} className="text-heading font-semibold text-highlight transition-transform cursor-pointer">Wikananda.</button>
 
                     <div className="flex flex-col md:flex-row gap-5 md:gap-10 xl:gap-16 items-center">
-                        <Link href="/" className="text-subheading font-normal text-primary hover:text-highlight hover:font-semibold transition-all duration-200">Projects</Link>
-                        <Link href="/" className="text-subheading font-normal text-primary hover:text-highlight hover:font-semibold transition-all duration-200">About</Link>
-                        <Link href="https://drive.google.com/file/d/1PDiXc6aaLOuUVC30Qh0plwimiEx2Dnnf/view?usp=sharing" target="_blank" className="text-subheading font-normal text-primary hover:text-highlight hover:font-semibold transition-all duration-200">Resume</Link>
+                        <button onClick={() => onNavigate("projects")} className="text-subheading font-normal text-primary hover:text-highlight transition-all duration-200 cursor-pointer">Projects</button>
+                        <button onClick={() => onNavigate("main")} className="text-subheading font-normal text-primary hover:text-highlight transition-all duration-200 cursor-pointer">About</button>
+                        <Link href="https://drive.google.com/file/d/1PDiXc6aaLOuUVC30Qh0plwimiEx2Dnnf/view?usp=sharing" target="_blank" className="text-subheading font-normal text-primary hover:text-highlight transition-all duration-200 cursor-pointer">Resume</Link>
                     </div>
 
                     <div className="flex flex-row gap-8 3xl:gap-15">
