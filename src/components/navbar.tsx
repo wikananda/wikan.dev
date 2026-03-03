@@ -8,7 +8,7 @@ export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="px-6 md:px-0 py-5 relative">
+        <nav className="px-6 py-5 relative">
             <div className="flex items-center justify-between">
                 <Link href="/" className="text-subheading font-semibold text-highlight">Wikananda.</Link>
 
