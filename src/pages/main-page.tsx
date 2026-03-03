@@ -56,9 +56,8 @@ export default function MainPage() {
                 </div>
 
                 {/* Divider — hidden on mobile */}
-                <svg className="hidden md:block w-[2px] h-[47px] 3xl:w-[3px] 3xl:h-16" viewBox="0 0 2 47" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                    <path d="M1 1V46" stroke="#32746D" strokeWidth="2" strokeLinecap="round" />
-                </svg>
+                <div className="hidden md:block w-px 3xl:w-[2px] h-[47px] 3xl:h-20 bg-primary/25 rounded-full">
+                </div>
 
                 {/* Resume */}
                 <ShineButton
