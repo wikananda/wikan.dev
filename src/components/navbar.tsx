@@ -10,7 +10,7 @@ export default function Navbar() {
     return (
         <nav className="px-6 py-5 relative">
             <div className="flex items-center justify-between">
-                <Link href="/" className="text-subheading font-semibold text-highlight">Wikananda.</Link>
+                <Link href="/" className="text-heading font-semibold text-highlight">Wikananda.</Link>
 
                 {/* Menu */}
                 <div className="hidden sm:flex gap-16">
