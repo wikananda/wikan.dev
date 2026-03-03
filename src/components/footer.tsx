@@ -36,7 +36,7 @@ export default function Footer({ onNavigate }: { onNavigate: (page: string) => v
             transition={{ duration: 0.5 }}
             className="bg-dark/25 backdrop-blur-sm border-t border-primary/30 w-full py-10 3xl:py-20 text-body font-light text-primary mt-20"
         >
-            <div className="w-full max-w-xl sm:max-w-xl md:max-w-2xl lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl 3xl:max-w-7xl 4k:max-w-400 mx-auto px-6 flex flex-col gap-10 3xl:gap-20">
+            <div className="container-main flex flex-col gap-10 3xl:gap-20">
                 <div className="flex flex-col md:flex-row gap-10 md:gap-10 justify-between items-center w-full">
                     <button onClick={() => onNavigate("main")} className="text-heading font-semibold text-highlight transition-transform cursor-pointer">Wikananda.</button>
 

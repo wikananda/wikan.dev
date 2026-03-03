@@ -8,8 +8,8 @@ export default function Navbar({ onNavigate }: { onNavigate: (page: string) => v
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="px-6 py-5 relative z-50">
-            <div className="flex items-center justify-between w-full max-w-xl sm:max-w-xl md:max-w-2xl lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl 3xl:max-w-7xl 4k:max-w-400 mx-auto">
+        <nav className="py-5 relative z-50">
+            <div className="flex items-center justify-between container-main">
                 <button onClick={() => onNavigate("main")} className="text-heading font-semibold text-highlight transition-transform cursor-pointer">Wikananda.</button>
 
                 {/* Menu */}

@@ -4,6 +4,12 @@
   --foreground: #9EC5AB;
 }
 
+@layer components {
+  .container-main {
+    @apply px-6 w-full mx-auto max-w-xl sm:max-w-xl md:max-w-2xl lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl 3xl:max-w-7xl 4k:max-w-[1600px];
+  }
+}
+
 @theme inline {
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);

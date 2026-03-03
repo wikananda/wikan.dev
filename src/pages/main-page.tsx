@@ -32,7 +32,7 @@ export default function MainPage() {
     };
 
     return (
-        <section className="w-full flex flex-col gap-6 min-h-[85vh] justify-center items-center md:items-start px-6">
+        <section className="w-full flex flex-col gap-6 min-h-[85vh] justify-center items-center md:items-start">
             <div className="flex flex-col text-center md:text-left">
                 <h1 className="text-display font-semibold text-highlight leading-none">
                     <span className="block md:inline text-body md:text-display font-light text-primary mb-1 md:mb-0">
