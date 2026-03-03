@@ -25,16 +25,16 @@ export default function ProjectCard({ title, description, image, github, link, t
         <motion.div
             whileHover={{ scale: 1.015 }}
             whileTap={{ scale: 0.985 }}
-            className="flex flex-col gap-5 max-w-80 md:max-w-100 h-100 xl:h-125 bg-dark/25 backdrop-blur-sm border border-primary hover:border-highlight transition-all duration-200 rounded-sm px-5 py-5"
+            className="flex flex-col gap-5 max-w-90 sm:max-w-90 md:max-w-70 lg:max-w-90 h-125 xl:h-130 bg-dark/25 backdrop-blur-sm border border-primary hover:border-highlight transition-all duration-200 rounded-sm px-3 py-3"
         >
-            <div className="bg-dark w-full rounded-sm">
-                <img src={image} alt={title} className="w-full object-cover" />
+            <div className="bg-dark w-full h-1/2 rounded-sm border border-primary/50 overflow-hidden">
+                <img src={image} alt={title} className="w-full h-full object-cover" />
             </div>
 
             <div className="flex flex-col gap-3">
                 <div className="flex flex-row justify-between">
                     <h3 className="text-highlight font-semibold text-subheading">{title}</h3>
-                    <div className="flex flex-row gap-8">
+                    <div className="flex flex-row gap-5">
                         {link && (
                             <ClickableIcon href={link} icon={<ExternalLink size={20} />} />
                         )}

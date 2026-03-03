@@ -9,7 +9,7 @@ export default function ProjectsPage() {
             <div className="w-full h-50 flex flex-row justify-center md:justify-start items-center">
                 <h1 className="text-display font-semibold text-primary text-center md:text-left">Featured <span className="block md:inline text-highlight">Projects</span></h1>
             </div>
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-10">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-15 justify-items-center">
                 <ProjectCard
                     title="sona.ai"
                     description="Interview focused voice transcription and summarization based on WhisperX and Llama."
@@ -26,8 +26,14 @@ export default function ProjectsPage() {
                     link="https://github.com/wikananda/sona-ai"
                     tags={["Speech", "ASR", "LLM", "Next.js", "Whisper", "Llama"]}
                 />
-                {/* <ProjectCard /> */}
-                {/* <ProjectCard /> */}
+                <ProjectCard
+                    title="sona.ai"
+                    description="Interview focused voice transcription and summarization based on WhisperX and Llama."
+                    image="/sona-ai.png"
+                    github="https://github.com/wikananda/sona-ai"
+                    link="https://github.com/wikananda/sona-ai"
+                    tags={["Speech", "ASR", "LLM", "Next.js", "Whisper", "Llama"]}
+                />
             </div>
         </section>
     );
