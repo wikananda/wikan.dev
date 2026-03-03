@@ -35,7 +35,7 @@ export default function ProjectCard({ title, description, image, github, link, t
 
             <div className="flex flex-col gap-3 3xl:gap-8">
                 <div className="flex flex-row justify-between items-center">
-                    <h3 className="text-highlight font-semibold text-subheading">{title}</h3>
+                    <h3 className="text-highlight font-semibold text-subheading w-full max-w-3/4">{title}</h3>
                     <div className="flex flex-row gap-5 3xl:gap-10 4k:gap-14">
                         {link && (
                             <ClickableIcon href={link} icon={<ExternalLink className={iconClass} />} />
