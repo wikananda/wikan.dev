@@ -5,6 +5,8 @@ import { motion, type Variants } from "framer-motion";
 import { Mail, Download } from "lucide-react";
 import ClickableIcon from "@/components/clickable-icon";
 import ShineButton from "@/components/shine-button";
+import ExperienceItem from "@/components/experience-item";
+import { experiences } from "@/data/experiences";
 
 const iconClass = "w-5 h-5 3xl:w-8 3xl:h-8";
 
@@ -54,9 +56,12 @@ export default function AboutPage() {
             initial="hidden"
             animate="visible"
         >
+            {/* About me Title */}
             <div className="w-full h-75 3xl:h-100 flex flex-row justify-center items-center">
                 <h1 className="text-display font-semibold text-primary text-center md:text-left">About <span className="text-highlight">Me</span></h1>
             </div>
+
+            {/* About Me */}
             <div className="grid grid-cols-1 xl:grid-cols-5 gap-12 xl:gap-16 items-start">
 
                 {/* ── Left column: bio ── */}
@@ -149,6 +154,22 @@ export default function AboutPage() {
                     />
                 </motion.div>
             </div>
+
+            {/* Experiences Title */}
+            <div className="w-full h-75 3xl:h-100 flex flex-row justify-center items-center">
+                <h1 className="text-display font-semibold text-primary text-center md:text-left">My <span className="text-highlight">Experiences</span></h1>
+            </div>
+
+            {/* Experiences */}
+            <div className="w-full flex flex-col gap-5">
+                {experiences.map((experience, index) => (
+                    <ExperienceItem
+                        key={index}
+                        experience={experience}
+                    />
+                ))}
+            </div>
+
         </motion.section>
     );
 }
