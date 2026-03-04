@@ -57,9 +57,12 @@ export default function AboutPage() {
             animate="visible"
         >
             {/* About me Title */}
-            <div className="w-full h-75 3xl:h-100 flex flex-row justify-center items-center">
+            <motion.div
+                variants={itemVariants}
+                className="w-full h-75 3xl:h-100 flex flex-row justify-center items-center"
+            >
                 <h1 className="text-display font-semibold text-primary text-center md:text-left">About <span className="text-highlight">Me</span></h1>
-            </div>
+            </motion.div>
 
             {/* About Me */}
             <div className="grid grid-cols-1 xl:grid-cols-5 gap-12 xl:gap-16 items-start">
@@ -156,9 +159,15 @@ export default function AboutPage() {
             </div>
 
             {/* Experiences Title */}
-            <div className="w-full h-75 3xl:h-100 flex flex-row justify-center items-center">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="w-full h-75 3xl:h-100 flex flex-row justify-center items-center"
+            >
                 <h1 className="text-display font-semibold text-primary text-center md:text-left">My <span className="text-highlight">Experiences</span></h1>
-            </div>
+            </motion.div>
 
             {/* Experiences */}
             <div className="w-full flex flex-col gap-5">
@@ -171,9 +180,15 @@ export default function AboutPage() {
             </div>
 
             {/* Education Title */}
-            <div className="w-full h-75 3xl:h-100 flex flex-row justify-center items-center">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="w-full h-75 3xl:h-100 flex flex-row justify-center items-center"
+            >
                 <h1 className="text-display font-semibold text-primary text-center md:text-left">My <span className="text-highlight">Education</span></h1>
-            </div>
+            </motion.div>
 
             {/* Education */}
             <div className="w-full flex flex-col gap-5">
