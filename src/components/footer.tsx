@@ -32,7 +32,7 @@ export default function Footer({ onNavigate }: { onNavigate: (page: string) => v
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="bg-dark/25 backdrop-blur-sm border-t border-primary/30 w-full py-10 3xl:py-20 text-body font-light text-primary mt-20"
+            className="bg-dark/25 backdrop-blur-sm border-t border-primary/30 w-full py-10 3xl:py-20 text-body font-light text-primary mt-50"
         >
             <div className="container-main flex flex-col gap-10 3xl:gap-20">
                 <div className="flex flex-col md:flex-row gap-10 md:gap-10 justify-between items-center w-full">

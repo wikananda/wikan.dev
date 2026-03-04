@@ -129,7 +129,7 @@ export default function AboutPage() {
                     className="xl:col-span-2 flex flex-col items-center xl:items-end gap-6 order-1 xl:order-2"
                 >
                     {/* Profile photo */}
-                    <div className="relative w-[256px] h-[256px] 3xl:w-[350px] 3xl:h-[350px] 4k:w-[512px] 4k:h-[512px] rounded-sm 3xl:rounded-md overflow-hidden border 3xl:border-2 border-primary">
+                    <div className="relative w-[256px] h-[256px] 3xl:w-[350px] 3xl:h-[350px] 4k:w-[512px] 4k:h-[512px] rounded-sm 3xl:rounded-md overflow-hidden border 4k:border-2 border-primary">
                         <Image
                             src="/profile.png"
                             alt="Nyoman Wikananda Santana"

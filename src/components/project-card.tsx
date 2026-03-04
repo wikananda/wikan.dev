@@ -25,7 +25,7 @@ export default function ProjectCard({ title, description, image, github, link, t
         <motion.div
             whileHover={{ scale: 1.015 }}
             whileTap={{ scale: 0.985 }}
-            className="flex flex-col gap-5 max-w-90 sm:max-w-90 md:max-w-70 lg:max-w-90 3xl:max-w-11/12 4k:max-w-2xl h-125 xl:h-130 3xl:h-200 4k:h-240 bg-dark/25 backdrop-blur-sm border 4k:border-2 border-primary hover:border-highlight transition-all duration-200 rounded-sm 3xl:rounded-lg px-3 py-3 3xl:px-6 3xl:py-6"
+            className="flex flex-col gap-5 max-w-90 sm:max-w-90 md:max-w-70 lg:max-w-90 3xl:max-w-11/12 4k:max-w-2xl h-125 xl:h-130 3xl:h-200 4k:h-240 bg-dark/25 backdrop-blur-sm border 4k:border-2 border-primary hover:border-highlight transition-all duration-200 rounded-sm 3xl:rounded-lg px-3 py-3 4k:px-6 4k:py-6"
         >
             <div className="bg-dark w-full h-1/2 rounded-sm 3xl:rounded-lg border 4k:border-2 border-primary/50 overflow-hidden">
                 <img src={image} alt={title} className="w-full h-full object-cover object-center" />

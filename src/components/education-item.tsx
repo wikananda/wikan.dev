@@ -17,7 +17,7 @@ export default function EducationItem({ education }: { education: Education }) {
             <div className="md:col-span-3 flex flex-col gap-2">
                 <h3 className="text-subheading font-semibold text-highlight">{education.institution}</h3>
                 <p className="text-body font-normal text-highlight">{education.degree} <span className="text-body font-normal text-primary">— {education.location}</span></p>
-                <ul className="list-disc list-inside">
+                <ul className="list-disc list-outside pl-5">
                     {education.points.map((point, index) => (
                         <li key={index} className="text-body font-light text-primary">{point}</li>
                     ))}

@@ -17,7 +17,7 @@ export default function ExperienceItem({ experience }: { experience: Experience 
             <div className="md:col-span-3 flex flex-col gap-2">
                 <h3 className="text-subheading font-semibold text-highlight">{experience.company}</h3>
                 <p className="text-body font-normal text-highlight">{experience.role} <span className="text-body font-normal text-primary">— {experience.location}</span></p>
-                <ul className="list-disc list-inside">
+                <ul className="list-disc list-outside pl-5">
                     {experience.points.map((point, index) => (
                         <li key={index} className="text-body font-light text-primary">{point}</li>
                     ))}
