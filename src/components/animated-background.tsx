@@ -22,7 +22,9 @@ export default function AnimatedBackground() {
     return (
         <motion.div
             style={{ background }}
-            className="fixed inset-0 -z-10 h-full w-full"
+            className="fixed inset-0 -z-10 h-dvh w-screen"
         />
+
+
     );
 }
