@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --foreground: #9EC5AB;
+}
+
+@layer components {
+  .container-main {
+    @apply px-6 w-full mx-auto max-w-xl sm:max-w-xl md:max-w-2xl lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl 4k:max-w-[1600px];
+  }
+
+  .icon-standard {
+    @apply w-5 h-5 3xl:w-7 3xl:h-7 4k:w-8 4k:h-8;
+  }
+}
+
+@theme inline {
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+
+  --color-primary: #9EC5AB;
+  --color-highlight: #E5ECBE;
+  --color-dark: #01150C;
+  --color-green-shade: #32746D;
+  --color-green-darkshade: #104F55;
+
+  /* Custom breakpoints for large & ultra-wide screens */
+  --breakpoint-3xl: 120rem;
+  /* 1920px — FHD */
+  --breakpoint-4k: 160rem;
+  /* 3840px — 4K UHD */
+
+  /* clamp(mobile-min, vw-scale, max) */
+  --text-display: clamp(1.75rem, 2.5vw, 6rem);
+  --text-heading: clamp(1.1rem, 1.3vw, 3rem);
+  --text-subheading: clamp(1rem, 1.1vw, 2.5rem);
+  --text-body: clamp(0.9rem, 0.9vw, 1.75rem);
+  --text-caption: clamp(0.75rem, 0.7vw, 1.25rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #9EC5AB;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
