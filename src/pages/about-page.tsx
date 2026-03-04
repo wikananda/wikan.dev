@@ -7,6 +7,8 @@ import ClickableIcon from "@/components/clickable-icon";
 import ShineButton from "@/components/shine-button";
 import ExperienceItem from "@/components/experience-item";
 import { experiences } from "@/data/experiences";
+import { educations } from "@/data/educations";
+import EducationItem from "@/components/education-item";
 
 const github = {
     href: "https://github.com/wikananda",
@@ -164,6 +166,21 @@ export default function AboutPage() {
                     <ExperienceItem
                         key={index}
                         experience={experience}
+                    />
+                ))}
+            </div>
+
+            {/* Education Title */}
+            <div className="w-full h-75 3xl:h-100 flex flex-row justify-center items-center">
+                <h1 className="text-display font-semibold text-primary text-center md:text-left">My <span className="text-highlight">Education</span></h1>
+            </div>
+
+            {/* Education */}
+            <div className="w-full flex flex-col gap-5">
+                {educations.map((education, index) => (
+                    <EducationItem
+                        key={index}
+                        education={education}
                     />
                 ))}
             </div>
