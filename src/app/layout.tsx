@@ -11,10 +11,6 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Wikananda - AI Developer",
   description: "AI Developer portfolio",
-  icons: {
-    icon: "/icon.svg",
-    apple: "/icon.svg",
-  },
 };
 
 export default function RootLayout({
