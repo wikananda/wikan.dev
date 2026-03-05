@@ -40,7 +40,7 @@ export default function Footer({ onNavigate }: { onNavigate: (page: string) => v
 
                     <div className="flex flex-col md:flex-row gap-5 md:gap-10 xl:gap-16 items-center">
                         <button onClick={() => onNavigate("projects")} className="text-subheading font-normal text-primary hover:text-highlight transition-all duration-200 cursor-pointer">Projects</button>
-                        <button onClick={() => onNavigate("main")} className="text-subheading font-normal text-primary hover:text-highlight transition-all duration-200 cursor-pointer">About</button>
+                        <button onClick={() => onNavigate("about")} className="text-subheading font-normal text-primary hover:text-highlight transition-all duration-200 cursor-pointer">About</button>
                         <Link href="https://drive.google.com/file/d/1PDiXc6aaLOuUVC30Qh0plwimiEx2Dnnf/view?usp=sharing" target="_blank" className="text-subheading font-normal text-primary hover:text-highlight transition-all duration-200 cursor-pointer">Resume</Link>
                     </div>
 

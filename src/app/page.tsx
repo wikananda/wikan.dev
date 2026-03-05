@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AnimatedBackground from "@/components/animated-background";
 import Navbar from "@/components/navbar";
 import MainPage from "@/pages/main-page";
@@ -22,6 +22,10 @@ function renderPage(page: string) {
 
 export default function Home() {
   const [activePage, setActivePage] = useState("main");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [activePage]);
 
   return (
     <main className="w-full">
