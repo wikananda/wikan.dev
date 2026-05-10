@@ -9,6 +9,13 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        title: "SwiftCPEA",
+        description: "SwiftFormer for Few-Shot Image Classification with Class-Aware Token Patch Embedding Adaptation",
+        image: "/swiftcpea.png",
+        github: "https://github.com/wikananda/SwiftCPEA",
+        tags: ["Computer Vision", "Classification", "Few-shot learning"]
+    },
+    {
         title: "sona.ai",
         description: "Interview focused voice transcription and summarization based on WhisperX and Llama.",
         image: "/sona-ai.png",

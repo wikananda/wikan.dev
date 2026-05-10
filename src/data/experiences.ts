@@ -8,6 +8,17 @@ export interface Experience {
 
 export const experiences: Experience[] = [
     {
+        period: "Feb 2026 - Present",
+        company: "SeaLens",
+        role: "Deep Learning Engineer",
+        location: "Remote, Indonesia",
+        points: [
+            "Built dataset tools to filter and produce quality data from iNaturalist.",
+            "Achieved 89.42% ± 0.44% accuracy (~17% improvement from previous model) in few-shot learning of fish species classification task with custom architecture.",
+            "Integrate classification models into backend for deployment."
+        ]
+    },
+    {
         period: "Sep 2025 - Present",
         company: "PT Summon Cipta Inovasi",
         role: "Machine Learning Engineer",
@@ -21,7 +32,7 @@ export const experiences: Experience[] = [
     {
         period: "Feb 2024 - Jul 2024",
         company: "National Taiwan University of Science and Technology",
-        role: "Student Laboratory Internship",
+        role: "Undergraduate Research Intern",
         location: "Taipei, Taiwan",
         points: [
             "Built ML Algorithm for Sentiment Analysis with 89.33% accuracy.",
@@ -37,7 +48,7 @@ export const experiences: Experience[] = [
         points: [
             "Analyzed and processed trajectory 5 types of trajectory dataset from plane, vessel, cars and elephant trajectory.",
             "Developed Trajectory Tracking System (TTS) model with metric MSE 1.3899, outperforming other 4 baseline models.",
-            "Conducted algorithm class tutor for 1 semester."
+            "Collaborate and discuss with 3 professors from different laboratories and Universities."
         ]
     }
 ];
